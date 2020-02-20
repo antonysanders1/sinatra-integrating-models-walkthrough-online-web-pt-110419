@@ -26,7 +26,7 @@ class TextAnalyzer
     arr = s1.split('')
     arr1 = arr.uniq
     hash = {}
-    binding.pry
+    
  
     arr1.map { |c| hash[c] =  arr.count(c) }
  
@@ -36,7 +36,7 @@ class TextAnalyzer
       if value > biggest.values.first
         biggest = {}
         biggest[key] = value
-       
+       binding.pry
       end
     end
  
