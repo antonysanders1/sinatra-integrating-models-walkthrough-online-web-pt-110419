@@ -30,7 +30,7 @@ class TextAnalyzer
  
     arr1.map { |c| hash[c] =  arr.count(c) }
  
-    biggest = { arr2.keys.first => hash.values.first }
+    biggest = { hash.keys.first => hash.values.first }
  
     hash.each do |key, value|
       if value > biggest.values.first
