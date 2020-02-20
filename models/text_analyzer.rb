@@ -30,13 +30,13 @@ class TextAnalyzer
  
     arr1.map { |c| hash[c] =  arr.count(c) }
  
-    biggest = { hash.keys.first => hash.values.first }
+    biggest = { arr2.keys.first => arr2.values.first }
  
-    hash.each do |key, value|
+    arr2.each do |key, value|
       if value > biggest.values.first
         biggest = {}
         biggest[key] = value
-       binding.pry
+       
       end
     end
  
