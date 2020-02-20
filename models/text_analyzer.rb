@@ -28,8 +28,7 @@ class TextAnalyzer
     hash = {}
     binding.pry
  
-    arr1.map do |c|
-      hash[c] =  arr.count(c)
+    arr1.map { |c| hash[c] =  arr.count(c) }
     end
  
     biggest = { arr2.keys.first => hash.values.first }
