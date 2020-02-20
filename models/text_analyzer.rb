@@ -1,4 +1,5 @@
 # Your TextAnalyzer model code will go here.
+require 'pry'
 class TextAnalyzer
   attr_reader :text
  
