@@ -25,10 +25,10 @@ class TextAnalyzer
     s1 = text.gsub(/[^a-z]/, '') # gets rid of spaces
     arr = s1.split('')
     arr1 = arr.uniq
-    hash = {}
+    arr2 = {}
     
  
-    arr1.map { |c| hash[c] =  arr.count(c) }
+    arr1.map { |c| arr2[c] =  arr.count(c) }
  
     biggest = { arr2.keys.first => arr2.values.first }
  
@@ -36,7 +36,7 @@ class TextAnalyzer
       if value > biggest.values.first
         biggest = {}
         biggest[key] = value
-       
+       binding.pry
       end
     end
  
